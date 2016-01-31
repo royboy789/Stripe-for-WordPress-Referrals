@@ -4,7 +4,7 @@
  * Description: A way to add referrals
  * Author: Roy Sivan
  * Author URI: http://www.roysivan.com
- * Version: 0.1
+ * Version: 0.2
  * Plugin URI: https://github.com/royboy789/Stripe-for-WordPress
  * License: GPL3+
  * Text Domain: wp-stripe-referrals
@@ -13,7 +13,7 @@
 
 define( 'WP_STRIPE_REFERRAL_DIR', plugin_dir_path( __FILE__ ) );
 define( 'WP_STRIPE_REFERRAL_URL', plugin_dir_url( __FILE__ ) );
-define( 'WP_STRIPE_REFERRAL_VERSION', '0.1' );
+define( 'WP_STRIPE_REFERRAL_VERSION', '0.2' );
 
 require 'inc/stripe-wp-referral-scripts.php';
 require 'inc/stripe-wp-referral-shortcodes.php';

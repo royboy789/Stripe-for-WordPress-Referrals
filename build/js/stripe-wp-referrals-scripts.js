@@ -225,7 +225,7 @@ wp_stripe.app.directive('stripeCustomerReferral', function() {
                         var referrer_data = {
                             id: $scope.referrer,
                             account_balance: $scope.referrer_amount
-                        }
+                        };
                         Stripe.customer.save( referrer_data );
                     };
 
@@ -234,7 +234,7 @@ wp_stripe.app.directive('stripeCustomerReferral', function() {
                         var referrer_data = {
                             id: res.data.id,
                             account_balance: $scope.referral_amount
-                        }
+                        };
                         Stripe.customer.save( referrer_data );
                     };
 
@@ -255,7 +255,7 @@ wp_stripe.app.directive('stripeCustomerReferral', function() {
                     }
 
                     if( stripe_wp_local.confirmation.type == 'page' ) {
-                        window.location = stripe_wp_local.confirmation.page;
+                        window.location = stripe_wp_local.confirmation.page + '?new_cus=' + res.data.metadata.user_id;
                     }
 
                 }, function(res){
