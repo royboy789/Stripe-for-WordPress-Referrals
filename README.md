@@ -27,4 +27,4 @@ I have created a few endpoints if you want to extend. All under the `stripe-wp` 
 + Login to your dashboard and activate the `Stripe for WordPress Referrals Add-On` plugin
 
 ##TO-DO
-all to-do, issues, and feature requests are in [issues](https://github.com/royboy789/Stripe-for-WordPress/issues)
+all to-do, issues, and feature requests are in [issues](https://github.com/royboy789/Stripe-for-WordPress-Referrals/issues)
