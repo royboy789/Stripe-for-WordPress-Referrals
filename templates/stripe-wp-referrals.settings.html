@@ -1,0 +1,30 @@
+<h2>Referral Settings</h2>
+<p>
+    Change the referral settings below for your site
+</p>
+
+<form class="row" ng-submit="updateSettings()">
+    <div class="col-sm-12">
+        <h3>Ammount Options</h3>
+        <div class="form-group">
+            <label for="referrer_amount">Referrer Amount</label>
+            <input id="referrer_amount" ng-model="referrals.referrer_amount" class="form-control" placeholder="In 1/100 - i.e pennies" />
+            <em>How much should the referring customer receive on succesful referral?</em>
+        </div>
+        <hr />
+        <div class="form-group">
+            <label for="referral_amount">Referrer Amount</label>
+            <input id="referral_amount" ng-model="referrals.referral_amount" class="form-control" placeholder="In 1/100 - i.e pennies" />
+            <em>How much should the referral customer receive on succesful payment?</em>
+        </div>
+        <hr />
+        <div class="form-group">
+            <label for="referral_code_prefix">Referral Code Prefix</label>
+            <input id="referral_code_prefix" ng-model="referrals.referral_code_prefix" class="form-control" placeholder="Referral Code Prefix" />
+            <em>What should all referral codes be prefixed with? i.e <strong>MYCODE</strong>-123 </em>
+        </div>
+        <div class="form-group text-center">
+            <button type="submit" class="btn btn-primary">Save Settings</button>
+        </div>
+    </div>
+</form>
