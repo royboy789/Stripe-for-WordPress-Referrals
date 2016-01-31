@@ -38,6 +38,15 @@ class stripe_wp_referrals {
 		$endpoints = new stripe_wp_referral_enddpoints();
 		$endpoints->register_referral_endpoints();
 	}
+	function new_user_code( $user_id ) {
+		$code_prefix = 'code';
+		if( get_option( 'stripe_wp_referral_code_prefix', false ) ) {
+			$code_prefix = get_option( 'stripe_wp_referral_code_prefix' );
+		}
+
+		update_user_meta( $user_id, '__stripe-wp-referral-code', $code_prefix . '-' . $user_id );
+
+	}
 }
 
 $referrals = new stripe_wp_referrals();
@@ -57,5 +66,10 @@ add_shortcode( 'stripe-wp-referral', array( $referrals, 'referral_shortcode') );
  * Add API endpoints
  */
 add_action( 'rest_api_init', array( $referrals, 'referral_endpoints') );
+
+/*
+ * Create Referral Code on user sign up
+ */
+add_action( 'user_register', array( $referrals, 'new_user_code' ) );
 
 ?>
