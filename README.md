@@ -23,8 +23,8 @@ I have created a few endpoints if you want to extend. All under the `stripe-wp` 
 + Clone Repo
 + Run `npm install`
 + Run `gulp`
-+ Move `build`, `inc`, `templates`, and `stripe-for-wp.php` into a new directory within your `wp-content/plugins`
-+ Login to your dashboard and activate the `Stripe for WordPress` plugin
++ Move `build`, `inc`, `templates`, and `stripe-wp-referrals.php` into a new directory within your `wp-content/plugins`
++ Login to your dashboard and activate the `Stripe for WordPress Referrals Add-On` plugin
 
 ##TO-DO
 all to-do, issues, and feature requests are in [issues](https://github.com/royboy789/Stripe-for-WordPress/issues)
