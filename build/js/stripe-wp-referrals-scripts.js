@@ -1,4 +1,3 @@
-
 (function(wp_stripe){
     /** make sure wp-stripe is defined **/
     if( typeof wp_stripe.app == 'undefined' ) {
